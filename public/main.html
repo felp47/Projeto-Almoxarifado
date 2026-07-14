@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Main-Page</title>
+</head>
+<body>              
+    <header class="cabecalho-sistema">
+        <section class="perfil-usuarios">
+            <p id="user">Usuário</p>
+        </section>
+        <section id="logout">
+            <button type="button" onclick="window.location.href='login.html'">
+               <i class="bx bx-exit"></i> Finalizar Sessão
+            </button>
+        </section>
+    </header>
+        <section id="title"><h1>Sistema de Gestão Integrada</h1></section>
+    <main class="conteiner-layout">
+        <!--Essas divs vao represenatar os modulos de gerenciamento e movimentação -->
+        <div class="conteiner-main">
+            
+            <h3>GERENCIAMENTO DE INSUMOS</h3>
+             <P >Consulte, cadastre e gerencie todos os insumos do sistema em um só lugar.</P> 
+
+            <div class="div-btn">
+                <button class="btn-mudulo"
+                
+                ><a href="gerenciador.html">Acessar Modulo</a></button>
+            </div>
+        </div>
+
+        <div class="conteiner-main">
+            
+            <h3>MONITORAMENTO DE INSUMOS</h3>
+            <P >Registre entradas e saídas e monitore níveis críticos de estoque.</P> 
+
+            <div class="div-btn">
+                <button class="btn-mudulo" ><a href="movimentacoes.html">Acessar Modulo</a></button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer">
+        <p>&copy; Projeto Integrador -2026-  </p>
+    </footer>
+<script src="javaScript/main.js"></script>
+</body>
+</html>

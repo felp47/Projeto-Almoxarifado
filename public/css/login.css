@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Elimina qualquer rolagem residual na tela de autenticação */
+}
+
+/* Divisão de tela principal */
+.Login-conteiner {
+    display: flex;       
+    width: 100%;
+    height: 100%;
+}
+
+/* Lado Esquerdo - Fundo com Novo Degradê Azul Escuro Profundo e Elegante */
+.login-left-side {
+    flex: 1; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Degradê sofisticado: do azul marinho da meia-noite ao branco puro */
+    background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 40%, #FFFFFF 100%);
+    padding: 20px;
+}
+
+/* Lado Direito - Imagem Operacional */
+.right-side-img {
+    flex: 1; 
+    height: 100%;
+    background-color: #0F172A; /* Cor de segurança idêntica ao início do degradê */
+}
+
+.right-side-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante o preenchimento inteligente do frame sem esticar */
+}
+
+/* Container do Form */
+.form-conteiner {
+    width: 100%;
+    max-width: 440px;
+}
+
+/* Efeito Glassmorphism Estiloso e de Alto Contraste */
+.forms {
+    background-color: rgba(255, 255, 255, 0.88); /* Levemente opaco para garantir leitura cristalina */
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(16px); /* Desfoque de fundo mais suave e elegante */
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.3); /* Sombra suave baseada no tom escuro */
+    border-radius: 20px; /* Bordas mais modernas e arredondadas */
+    padding: 45px 40px;
+    color: #1E293B;
+}
+
+/* Título de Login Alinhado ao Padrão de Identidade Visual */
+.forms h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: 700;
+    color: #1E3A8A; /* Azul escuro quase preto para autoridade visual */
+    letter-spacing: -0.5px;
+}
+
+/* Inputs da Interface */
+.input-forms {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.input-forms input {
+    width: 100%;
+    height: 52px;
+    border: 1px solid #CBD5E1; /* Borda cinza suave neutra */
+    border-radius: 10px;
+    outline: none;
+    color: #0F172A;
+    font-size: 15px;
+    padding: 0 48px 0 16px; /* Espaço seguro para que o texto nunca bata no ícone */
+    background-color: #FFFFFF;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Foco Ativo nos Campos */
+.input-forms input:focus {
+    border-color: #1E3A8A;
+    box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.12); /* Brilho de foco sutil e moderno */
+}
+
+/* Posicionamento Preciso dos Ícones Boxicons */
+.input-forms i {
+    position: absolute;
+    right: 16px;
+    font-size: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #64748B; /* Cor sóbria para os ícones */
+    pointer-events: none;
+}
+
+/* Link Secundário Otimizado (Esqueci minha senha) */
+.conteiner-forget-password {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+}
+
+.conteiner-forget-password a {
+    color: #475569; /* Tom sóbrio, elegante e integrado à paleta escura */
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.conteiner-forget-password a:hover {
+    color: #1E3A8A; /* Transiciona para o azul ativo no hover */
+    text-decoration: underline;
+}
+
+/* Botão de Autenticação - Foco em Estilo e Alta Performance */
+.forms button {
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1E3A8A; /* Azul Industrial Ativo */
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.25);
+    transition: all 0.2s ease-in-out;
+}
+
+.forms button:hover {
+    background-color: #FFFFFF; /* Fundo fica branco */
+    color: #1E3A8A;            /* A letra fica com o azul padrão das páginas */
+    border: 1px solid #1E3A8A; /* Adiciona uma borda azul sutil para manter o contorno perfeito */
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.2);
+    transform: translateY(-1px); /* Mantém a micro-interação de clique refinada */
+}
+
+.forms button:active {
+    transform: translateY(1px);
+}
+
+/* Notificação Visual de Erros */
+.erro-texto {
+    display: block;
+    color: #EF4444; /* Vermelho vibrante de erro para acessibilidade */
+    font-size: 13px;
+    margin-top: -16px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}

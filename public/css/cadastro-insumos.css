@@ -1,0 +1,160 @@
+/* ==========================================================================
+   MÓDULO: CADASTRO DE INSUMOS (cadastro-insumos.css) - UX/UI INDUSTRIAL
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F3F4F6;
+    color: #1F2937;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho Padrão */
+.cabecalho-sistema, header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E3A8A;
+    padding: 15px 40px;
+    color: #FFFFFF;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+#user {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+#logout button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 24px;
+    height: 46px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#logout button:hover {
+    background-color: #DC2626;
+    border-color: #DC2626;
+    color: #FFFFFF;
+}
+
+/* Títulos */
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1E3A8A;
+    text-align: center;
+    margin: 30px 20px 10px 20px;
+}
+
+/* Layout Centralizado do Formulário */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 60px 20px;
+    width: 100%;
+    flex: 1;
+}
+
+.layout-form {
+    width: 100%;
+    max-width: 650px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 40px;
+}
+
+/* Campos de Entrada e Agrupamentos */
+.container-cad-fornecedor,
+.container-cad-insumo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+    width: 100%;
+}
+
+.layout-form label {
+    font-size: 17px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.layout-form input,
+.layout-form select {
+    width: 100%;
+    height: 48px; /* Altura confortável para digitação/toque */
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 18px;
+    color: #1F2937;
+    background-color: #FFFFFF;
+    transition: border-color 0.2s ease;
+}
+
+.layout-form input:focus,
+.layout-form select:focus {
+    border-color: #1E3A8A;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15);
+}
+
+/* Separador Estético */
+.layout-form hr {
+    border: 0;
+    border-top: 2px solid #F3F4F6;
+    margin: 25px 0;
+}
+
+/* Ação Primária: Salvar/Cadastrar */
+.btn-cad {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.btn-cad button {
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 8px;
+    background-color: #059669; /* Verde Sucesso para confirmação implícita */
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(5, 150, 105, 0.2);
+    transition: background-color 0.2s ease;
+}
+
+.btn-cad button:hover {
+    background-color: #047857;
+}

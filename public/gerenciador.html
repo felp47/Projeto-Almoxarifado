@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/gerenciador.css"> 
+    <title>Gerenciamento de Insumos</title>
+</head>
+<body>
+        <header class="cabecalho-sistema">
+        <section class="perfil-usuarios">
+            <p id="user">Usuário</p>
+        </section>
+        <section id="logout">
+            <button type="button" onclick="window.location.href='main.html'">
+               <i class="bx bx-exit"></i> Menu Principal
+            </button>
+        </section>
+    </header>
+    <div>
+        <h1>Gerenciamento de Insumos</h1>
+        <p>Visualize, cadastre e gerencie todos os insumos do sistema.</p>
+    </div>
+    <div class="container-painel">
+        <article class="busca-container">
+            <label for="campoBusca"> Buscar :</label>
+            <input type="text" id="campoBusca" placeholder="Digite o nome ou código do Insumo " />
+        </article>
+        <section class="container-cad-insumo">
+            <button class="btn-cadastro"><a href="cadastro-insumos.html">+ Incluir Novo Insumo</a></button>
+        </section>
+    </div>
+    <main>
+        <div class="container-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Categoria</th>
+                        <th>Lote</th>
+                        <th>Dt-Validade</th>
+                        <th>Uni.Medida</th>
+                        <th>Qtd-Atual</th>
+                        <th>Estoque-Min.</th>
+                        <th>Fornecedor</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="corpoTabela">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    
+
+    <script src="javaScript/gerenciamento.js"></script>
+</body>
+</html>

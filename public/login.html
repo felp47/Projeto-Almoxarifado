@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login-Page</title>
+</head>
+<body>
+    <div class="Login-conteiner">
+            <main class="login-left-side">
+
+                <section class="form-conteiner">
+
+                    <form  class="forms" id="form-login" >
+
+                        <h1>Gestão Integrada de Insumos</h1>
+                        <p style="font-size: 14px; color: #64748B; text-align: center; margin-top: -25px; margin-bottom: 30px;">
+    Insira suas credenciais para acessar ao sistema.
+</p>
+                        <div class="input-forms">
+                            <input type="email" placeholder="Digiteseu@email.com" id="email" name="email">
+                            <i class="bx bx-user"></i>
+                        </div>
+
+                        <div class="input-forms">
+                            <input type="password" placeholder="Digite sua Senha" id="senha" name="senha">
+                            <i class="bx bx-lock"></i>
+                        </div>
+                         <!-- span criado para exibir mensagem de erro para o usuario -->
+                        <span id="mensagem-erro" class="erro-texto"></span>
+
+                        <button type="submit">Login</button>
+                        
+                        
+
+                    </form>
+
+                </section>
+
+            </main>
+
+            <aside class="right-side-img">
+                 <img src="./assets/img-loginpageIA.png" alt="">
+            </aside>
+    </div>
+    
+    
+
+
+<script src="/javaScript/login.js"></script>
+</body>
+</html>

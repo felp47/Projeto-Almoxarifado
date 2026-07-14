@@ -1,0 +1,227 @@
+/* ==========================================================================
+   MÓDULO: MOVIMENTAÇÃO DE INSUMOS (movimentacoes.css) - UX/UI INDUSTRIAL
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F3F4F6;
+    color: #1F2937;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+.cabecalho-sistema {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E3A8A;
+    padding: 15px 40px;
+    color: #FFFFFF;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+#user {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+#logout button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 24px;
+    height: 46px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#logout button:hover {
+    background-color: #DC2626; 
+    border-color: #DC2626;
+    color: #FFFFFF;
+}
+
+/* Container do Conteúdo */
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 30px 20px 60px 20px;
+}
+
+.introducao-modulo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1E3A8A;
+    margin-bottom: 5px;
+}
+
+.introducao-modulo p {
+    color: #4B5563;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Seção do Formulário de Registro */
+.secao-formulario {
+    width: 100%;
+    max-width: 650px;
+    margin-bottom: 50px;
+}
+
+.layout-form {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.layout-form h2 {
+    font-size: 20px;
+    color: #1E3A8A;
+    margin-bottom: 25px;
+    font-weight: 600;
+    border-bottom: 2px solid #F3F4F6;
+    padding-bottom: 12px;
+}
+
+/* Inputs das Movimentações */
+.container-input-mov {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.container-input-mov label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.container-input-mov input,
+.container-input-mov select {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 16px;
+    color: #1F2937;
+    background-color: #FFFFFF;
+}
+
+.container-input-mov input:focus,
+.container-input-mov select:focus {
+    border-color: #1E3A8A;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15);
+}
+
+/* Destaque para Unidade de Medida Dinâmica */
+#unidadeDisplay {
+    font-weight: 700;
+    color:  #1E3A8A; /* Laranja âmbar para atrair atenção */
+}
+
+/* Botão Gravar */
+.btn-submeter-mov {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.btn-submeter-mov button {
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 8px;
+    background-color: #059669; /* Verde Confirmação */
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(5, 150, 105, 0.2);
+    transition: background-color 0.2s ease;
+}
+
+.btn-submeter-mov button:hover {
+    background-color: #047857;
+}
+
+/* Seção de Histórico e Auditoria */
+.secao-historico {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.secao-historico h2 {
+    font-size: 22px;
+    color: #1E3A8A;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Tabela de Auditoria */
+.container-table {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #E5E7EB;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 900px;
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 15px;
+}
+
+th {
+    background-color: #F9FAFB;
+    color: #1E3A8A;
+    font-weight: 600;
+    border-bottom: 2px solid #E5E7EB;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+td {
+    border-bottom: 1px solid #F3F4F6;
+    color: #4B5563;
+}
+
+tr:hover td {
+    background-color: #F3F4F6;
+}
